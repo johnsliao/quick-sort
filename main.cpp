@@ -38,17 +38,20 @@ void quicksort(int * A, int lo, int hi) {
 }
 
 int main() {
-
-    int arr[] = {9,1,3,2,8};
-    std::cout << "Starting array" << std::endl;
     
-    for (int x=0; x<5; x++) {
+    int arr[] = {9,1,3,2,8,4,2,1,10,7};
+    int length = sizeof(arr)/sizeof(arr[0]);
+    
+    std::cout << "unsorted array" << std::endl;
+    
+    for (int x=0; x<length; x++) {
         std::cout << arr[x] << " ";
     }
     std::cout << std::endl;
-    quicksort(arr,0,4);
-
-    for (int x=0; x<5; x++) {
+    quicksort(arr,0,length-1);
+    
+    std::cout << "sorted array" << std::endl;
+    for (int x=0; x<length; x++) {
         std::cout << arr[x] << " ";
     }
 }
