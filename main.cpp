@@ -39,7 +39,7 @@ void quicksort(int * A, int lo, int hi) {
 
 int main() {
     
-    int arr[] = {9,1,3,2,8,4,2,1,10,7};
+    int arr[] = {9,1,3,2,8,4,2,1,10,7, 2, 0};
     int length = sizeof(arr)/sizeof(arr[0]);
     
     std::cout << "unsorted array" << std::endl;
